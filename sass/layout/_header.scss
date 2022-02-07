@@ -1,0 +1,7 @@
+.header {
+  @include header-style;
+  @include center-element;
+  &__logo {
+    @include header-logo-style;
+  }
+}

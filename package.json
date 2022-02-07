@@ -1,0 +1,11 @@
+{
+  "name": "p3_doucara_fodie",
+  "version": "1.0.0",
+  "description": "OHMYFOOD",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

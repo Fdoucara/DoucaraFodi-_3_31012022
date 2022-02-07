@@ -1,0 +1,141 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 2px 5px 15px #bfbfbf;
+}
+
+.restaurants__card {
+  width: 90%;
+  border-radius: 15px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px lightgray;
+}
+.restaurants__card__img {
+  width: 100%;
+}
+.restaurants__card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 170px;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants__card__container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: #323030;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 190px;
+  padding: 15px 20px 10px 20px;
+}
+
+.restaurants__card__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub__header__localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 45px;
+  box-shadow: inset 0px 2px 4px 0px #c4c3c0;
+}
+.sub__header__localisation p {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.sub__header__container {
+  background-color: #f6f6f6;
+  padding: 30px;
+  padding-bottom: 50px;
+}
+.sub__header__container h1 {
+  width: 75%;
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+}
+.sub__header__container p {
+  margin: 15px 0px 30px 0px;
+  text-align: center;
+}
+.sub__header__container__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurants {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #f6f6f6;
+}
+.restaurants .restaurants__title {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.restaurants .restaurant__card__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

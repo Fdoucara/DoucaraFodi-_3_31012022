@@ -1,0 +1,47 @@
+.sub__header__localisation {
+  @include center-element;
+  background-color:#eaeaea;
+  height: 45px;
+  box-shadow: inset 0px 2px 4px 0px #c4c3c0;
+  p {
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+.sub__header__container {
+  background-color:#f6f6f6;
+  padding: 30px;
+  padding-bottom: 50px;
+
+  h1 {
+    width: 75%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  p {
+    margin: 15px 0px 30px 0px;
+    text-align: center;
+  }
+ &__btn {
+   @include center-element
+ }
+}
+
+
+.restaurants {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #f6f6f6;
+  .restaurants__title {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px
+  }
+  .restaurant__card__group {
+    @include center-element;
+  }
+}
