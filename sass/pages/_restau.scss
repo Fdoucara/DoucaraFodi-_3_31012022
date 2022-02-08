@@ -1,0 +1,37 @@
+.header {
+  a {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 20px;
+    color: black;
+    line-height: 55px;
+  }
+}
+
+main {
+  background-color: $bcg_color_one;
+}
+
+.sub__header__img {
+  img {
+    @include entete-img;
+  }
+}
+
+.sub__header__contain {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: $font-titre;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+

@@ -1,3 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .sub__header__localisation {
   @include center-element;
   background-color:#eaeaea;
@@ -6,40 +15,88 @@
   p {
     font-weight: 500;
     font-size: 15px;
+    span {
+      margin-right: 5px;
+    }
   }
 }
 
 .sub__header__container {
-  background-color:#f6f6f6;
+  background-color: $bcg_color_one;
   padding: 30px;
   padding-bottom: 50px;
 
   h1 {
-    width: 75%;
+    width: 90%;
     margin: auto;
-    font-size: 25px;
     text-align: center;
+    font-size: 25px;
   }
 
   p {
-    margin: 15px 0px 30px 0px;
+    width: 100%;
+    margin: 20px 0px 30px 0px;
     text-align: center;
+    font-size: 18px;
   }
  &__btn {
    @include center-element
  }
 }
 
+.fonctionnement {
+  padding-bottom: 40px;
+  padding-top: 35px;
+  &__title {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  &__list {
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    &__items {
+      @include center-element;
+      height: 70px;
+      position: relative;
+      background-color: $bcg_color_one;
+      margin-bottom: 30px;
+      list-style: none;
+      padding: 20px;
+      border-radius: 20px;
+      @include box_shadow(#c4c3c0);
+      span {
+        margin-right: 10%;
+        font-size: 20px;
+      }
+      &__number {
+        position: absolute;
+        left: -12px;
+        line-height: 70px;
+        @include center-element;
+        width: 25px;
+        height: 25px;
+        padding: 7px;
+        border-radius: 50px;
+        background-color: $premiere-coleur;
+        font-size: 15px;
+        color: white;
+      }
+    }
+  }
+}
 
 .restaurants {
-  margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: #f6f6f6;
+  background-color: $bcg_color_one;
   .restaurants__title {
     width: 90%;
     margin: auto;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-size: 25px;
   }
   .restaurant__card__group {
     @include center-element;

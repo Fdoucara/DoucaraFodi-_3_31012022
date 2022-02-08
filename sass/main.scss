@@ -1,14 +1,5 @@
 @import 'abstracts/mixins', 'abstracts/variables';
-@import 'base/typography';
+@import 'base/typography', 'base/normalize.scss';
 @import 'composents/buttons', 'composents/card';
 @import 'layout/footer', 'layout/header', 'layout/cardgroup';
 @import 'pages/restau.scss', 'pages/home.scss'; 
-
-*{
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}

@@ -16,3 +16,9 @@
     padding: 10px;
   }
 }
+
+.epd__card {
+  @include card;
+  padding: 15px;
+  @include box_shadow(rgb(211, 211, 211));
+}
