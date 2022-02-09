@@ -17,8 +17,21 @@
   }
 }
 
-.epd__card {
-  @include card;
-  padding: 15px;
-  @include box_shadow(rgb(211, 211, 211));
+.epd {
+  padding: 10px 0px;
+  h1 {
+    @include margin;
+    font-size: 15px;
+    font-weight: lighter
+  }
+  &__card {
+    @include card;
+    padding: 15px;
+    @include box_shadow(rgb(211, 211, 211));
+    &__container__description {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
 }

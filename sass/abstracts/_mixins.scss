@@ -1,7 +1,7 @@
 @mixin header-style {
   position: relative;
   width: 100%;
-  height: 55px;
+  height: auto;
   background-color: $bcg_color_one;
 }
 
@@ -37,7 +37,13 @@
   border-radius: 15px;
   height: auto;
   background-color: white;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@mixin margin {
+  width: 90%;
+  margin: auto;
 }
 
 @mixin card-img {
@@ -54,5 +60,5 @@
 @mixin entete-img {
   object-fit: cover;
   width: 100%;
-  height: 230px;
+  height: 100%;
 }
