@@ -26,11 +26,10 @@ body {
   padding: 30px;
   padding-bottom: 50px;
 
-  h1 {
+  h2 {
     width: 90%;
     margin: auto;
     text-align: center;
-    font-size: 25px;
   }
 
   p {
@@ -51,12 +50,33 @@ body {
     width: 90%;
     margin: auto;
     margin-bottom: 30px;
-    font-size: 25px;
+    @include tablet {
+      width: 100%;
+      margin-left: 30px;
+    }
+    @include desktop {
+      width: 100%;
+      margin-left: 35px;
+    }
+    @include large {
+      width: 100%;
+      margin-left: 40px;
+    }
   }
   &__list {
     width: 80%;
     margin: auto;
     padding: 0px;
+    @include desktop {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    @include large {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly
+    }
     &__items {
       @include center-element;
       height: 70px;
@@ -67,6 +87,12 @@ body {
       padding: 20px;
       border-radius: 20px;
       @include box_shadow(#c4c3c0);
+      @include desktop {
+        width: 27%;
+      }
+      @include large {
+        width: 27%;
+      }
       span {
         margin-right: 10%;
         font-size: 20px;
@@ -96,7 +122,18 @@ body {
     width: 90%;
     margin: auto;
     margin-bottom: 30px;
-    font-size: 25px;
+    @include tablet {
+      width: 100%;
+      margin-left: 30px;
+    }
+    @include desktop {
+      width: 100%;
+      margin-left: 35px;
+    }
+    @include large {
+      width: 100%;
+      margin-left: 40px;
+    }
   }
   .restaurant__card__group {
     @include center-element;

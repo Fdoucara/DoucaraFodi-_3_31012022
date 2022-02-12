@@ -1,5 +1,6 @@
-@import 'abstracts/mixins', 'abstracts/variables';
+@import 'abstracts/mixins', 'abstracts/variables', 'abstracts/map';
 @import 'base/typography', 'base/normalize.scss';
 @import 'composents/buttons', 'composents/card';
 @import 'layout/footer', 'layout/header', 'layout/cardgroup';
 @import 'pages/restau.scss', 'pages/home.scss'; 
+@import 'animations/hearts', 'animations/menus';

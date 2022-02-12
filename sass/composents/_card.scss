@@ -1,10 +1,31 @@
 .restaurants__card {
   @include card;
   @include box_shadow(rgb(211, 211, 211));
+  @include tablet {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+  @include desktop {
+    width: 45%;
+    margin-bottom: 25px;
+  }
+  @include large {
+    width: 45%;
+    margin-bottom: 25px;
+  }
   &__img {
     width: 100%;
     img {
-      @include card-img
+      @include card-img;
+      @include tablet {
+        height: 200px;
+      }
+      @include desktop {
+        height: 225px;
+      }
+      @include large {
+        height: 250px;
+      }
     }
   }
   &__container {
@@ -19,6 +40,12 @@
 
 .epd {
   padding: 10px 0px;
+  @include desktop {
+    width: 80%;
+  };
+  @include desktop {
+    width: 80%;
+  };
   h1 {
     @include margin;
     font-size: 15px;
