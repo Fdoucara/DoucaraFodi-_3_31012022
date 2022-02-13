@@ -1,3 +1,23 @@
+@keyframes loader {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@keyframes loader-jump {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 h1 {
   font-family: "Roboto", sans-serif;
 }
@@ -553,6 +573,7 @@ button {
   height: 100%;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s 2s forwards;
 }
 .loader__block {
   width: 10%;
@@ -563,19 +584,21 @@ button {
   justify-content: space-evenly;
 }
 .loader__block__item {
-  background-color: black;
   width: 15px;
   height: 15px;
   border-radius: 25px;
 }
 .loader__block__item:nth-child(1) {
   background-color: #9356DC;
+  animation: loader-jump 1.3s;
 }
 .loader__block__item:nth-child(2) {
   background-color: #FF79DA;
+  animation: loader-jump 1.3s 0.3s;
 }
 .loader__block__item:nth-child(3) {
   background-color: #99E2D0;
+  animation: loader-jump 1.3s 0.6s;
 }
 
 .header {

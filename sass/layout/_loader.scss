@@ -4,6 +4,7 @@
   height: 100%;
   z-index: 2;
   background-color: hsla(0,0%,100%,.9);
+  animation: loader 0.01s 2s forwards;
   &__block {
     width: 10%;
     margin: auto;
@@ -12,18 +13,20 @@
     align-items: center;
     justify-content: space-evenly;
     &__item {
-      background-color: black;
       width: 15px;
       height: 15px;
       border-radius: 25px;
       &:nth-child(1) { 
         background-color: $premiere-coleur;
+        animation: loader-jump 1.3s ;
       }
       &:nth-child(2) { 
         background-color: $seconde-coleur;
+        animation: loader-jump 1.3s 0.3s ;
       }
       &:nth-child(3) { 
         background-color: $troisieme-couleur;
+        animation: loader-jump 1.3s 0.6s ;
       }
     }
   }
