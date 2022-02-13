@@ -52,15 +52,15 @@ body {
     margin-bottom: 30px;
     @include tablet {
       width: 100%;
-      margin-left: 30px;
+      padding-left: 30px;
     }
     @include desktop {
       width: 100%;
-      margin-left: 35px;
+      padding-left: 35px;
     }
     @include large {
       width: 100%;
-      margin-left: 40px;
+      padding-left: 40px;
     }
   }
   &__list {
@@ -124,15 +124,15 @@ body {
     margin-bottom: 30px;
     @include tablet {
       width: 100%;
-      margin-left: 30px;
+      padding-left: 30px;
     }
     @include desktop {
       width: 100%;
-      margin-left: 35px;
+      padding-left: 35px;
     }
     @include large {
       width: 100%;
-      margin-left: 40px;
+      padding-left: 40px;
     }
   }
   .restaurant__card__group {
