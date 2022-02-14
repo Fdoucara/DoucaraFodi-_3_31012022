@@ -6,7 +6,9 @@
     display: block;
   }
   .heart {
+    font-size: 25px;
     &--full {
+      font-size: 25px;
       display: none;
       color: transparent;
       background: linear-gradient($seconde-coleur, $premiere-coleur);
@@ -31,7 +33,9 @@
     -webkit-background-clip: text;
   }
   .heart {
+    font-size: 25px;
     &--full {
+      font-size: 25px;
       display: none;
     }
   }

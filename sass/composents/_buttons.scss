@@ -1,3 +1,7 @@
 button {
   @include button-style;
+  &:hover {
+    box-shadow: 2px 5px 20px rgb(144, 142, 142);
+    transition: all 1s;
+  }
 }
