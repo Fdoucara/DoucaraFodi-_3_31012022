@@ -1,0 +1,17 @@
+.restaurants__card__container__icon {
+  &:hover > .heart {
+    display: none;
+  }
+  &:hover > .heart--full {
+    display: block;
+  }
+  .heart {
+    &--full {
+      display: none;
+      color: transparent;
+      background: linear-gradient($seconde-coleur, $premiere-coleur);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+}
