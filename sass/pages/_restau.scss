@@ -46,27 +46,9 @@
         width: 90%
       };
       &__title {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: lighter;
         font-family: $font-titre;
-      }
-      &__icon {
-        cursor: pointer;
-        &:hover > .heart {
-          display: none;
-        }
-        &:hover > .heart--full {
-          display: block;
-        }
-        .heart {
-          &--full {
-            display: none;
-            color: transparent;
-            background: linear-gradient($seconde-coleur, $premiere-coleur);
-            background-clip: text;
-            -webkit-background-clip: text;
-          }
-        }
       }
     }
   }

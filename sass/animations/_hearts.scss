@@ -15,3 +15,24 @@
     }
   }
 }
+
+
+.main__container__header__contain__icon {
+  cursor: pointer;
+  &:hover > .heart {
+    display: none;
+    
+  }
+  &:hover > .heart--full {
+    display: block;
+    color: transparent;
+    background: linear-gradient($seconde-coleur, $premiere-coleur);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .heart {
+    &--full {
+      display: none;
+    }
+  }
+}

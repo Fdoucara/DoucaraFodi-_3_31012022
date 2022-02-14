@@ -686,25 +686,9 @@ button {
   }
 }
 .main__container__header__contain__title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: lighter;
   font-family: "Shrikhand", cursive;
-}
-.main__container__header__contain__icon {
-  cursor: pointer;
-}
-.main__container__header__contain__icon:hover > .heart {
-  display: none;
-}
-.main__container__header__contain__icon:hover > .heart--full {
-  display: block;
-}
-.main__container__header__contain__icon .heart--full {
-  display: none;
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 .main__btn {
   display: flex;
@@ -913,6 +897,23 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.main__container__header__contain__icon {
+  cursor: pointer;
+}
+.main__container__header__contain__icon:hover > .heart {
+  display: none;
+}
+.main__container__header__contain__icon:hover > .heart--full {
+  display: block;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.main__container__header__contain__icon .heart--full {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
