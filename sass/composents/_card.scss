@@ -65,10 +65,14 @@
     @include card;
     padding: 15px;
     @include box_shadow(rgb(211, 211, 211));
-    &__container__description {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+    cursor: pointer;
+    &__container{
+      &__description {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
     }
   }
 }

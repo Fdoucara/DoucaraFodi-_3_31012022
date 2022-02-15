@@ -61,10 +61,12 @@
 .epd__container {
   width: 100%;
   @include desktop {
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
   };
   @include large {
+    margin-top: 30px;
     width: 95%;
     margin: auto;
     display: flex;

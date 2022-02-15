@@ -1,7 +1,8 @@
 button {
   @include button-style;
+  transition: all 0.5s;
   &:hover {
-    box-shadow: 2px 5px 20px rgb(144, 142, 142);
-    transition: all 1s;
+    box-shadow: 2px 5px 25px rgb(144, 142, 142);
+    @include light($premiere-coleur, $seconde-coleur)
   }
 }

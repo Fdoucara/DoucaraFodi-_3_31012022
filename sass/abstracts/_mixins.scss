@@ -50,9 +50,8 @@
 }
 
 @mixin button-style {
-  background-color: black;
+  background: white;
   background-image: linear-gradient($seconde-coleur, $premiere-coleur);
-  background-size: contain;
   color: white;
   padding: 20px 35px;
   border: none;
@@ -91,4 +90,8 @@
   @media (min-width: map-get($breakpoints, large)){
     @content;
   }
+}
+
+@mixin light ($premiere-coleur, $seconde-coleur){
+  background-image: linear-gradient(to top, lighten($premiere-coleur, 5%), $seconde-coleur);
 }
