@@ -62,17 +62,43 @@
     font-weight: lighter
   }
   &__card {
+    display: flex;
+    justify-content: space-between;
     @include card;
-    padding: 15px;
     @include box_shadow(rgb(211, 211, 211));
+    overflow-x: hidden;
     cursor: pointer;
     &__container{
+      width: 100%;
+      padding: 15px;
       &__description {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
       }
+    }
+    &__icon {
+      margin-right: -90px;
+      font-size: 30px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px 15px 15px 0px;
+      background-color: $troisieme-couleur;
+      width: 90px;
+      .fas {
+        font-size: 25px;
+      }
+    }
+    &:hover > .epd__card__icon {
+      margin-right: 0px;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover > .epd__card__icon .fas {
+      transform: rotate(360deg);
+      transition: all 0.5s ease-in-out;
     }
   }
 }

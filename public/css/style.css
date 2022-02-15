@@ -523,21 +523,49 @@ button:hover {
   font-weight: lighter;
 }
 .epd__card {
+  display: flex;
+  justify-content: space-between;
   width: 90%;
   border-radius: 15px;
   height: auto;
   background-color: white;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px;
   box-shadow: 0px 2px 10px lightgray;
+  overflow-x: hidden;
   cursor: pointer;
+}
+.epd__card__container {
+  width: 100%;
+  padding: 15px;
 }
 .epd__card__container__description {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+.epd__card__icon {
+  margin-right: -90px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  width: 90px;
+}
+.epd__card__icon .fas {
+  font-size: 25px;
+}
+.epd__card:hover > .epd__card__icon {
+  margin-right: 0px;
+  transition: all 0.5s ease-in-out;
+}
+.epd__card:hover > .epd__card__icon .fas {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
 }
 
 .footer {
