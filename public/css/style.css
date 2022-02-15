@@ -891,18 +891,26 @@ body {
   align-items: center;
 }
 
+.restaurants__card__container__icon {
+  position: relative;
+}
 .restaurants__card__container__icon:hover > .heart {
-  display: none;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .restaurants__card__container__icon:hover > .heart--full {
-  display: block;
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
 }
 .restaurants__card__container__icon .heart {
   font-size: 25px;
 }
 .restaurants__card__container__icon .heart--full {
+  position: absolute;
+  opacity: 0;
+  top: 0%;
   font-size: 25px;
-  display: none;
+  display: block;
   color: transparent;
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
@@ -910,24 +918,30 @@ body {
 }
 
 .main__container__header__contain__icon {
+  position: relative;
   cursor: pointer;
 }
 .main__container__header__contain__icon:hover > .heart {
-  display: none;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .main__container__header__contain__icon:hover > .heart--full {
-  display: block;
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
 }
 .main__container__header__contain__icon .heart {
   font-size: 25px;
 }
 .main__container__header__contain__icon .heart--full {
   font-size: 25px;
-  display: none;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  top: 0%;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=style.css.map */
