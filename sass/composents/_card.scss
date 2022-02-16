@@ -56,10 +56,22 @@
   &:nth-child(3) { 
     animation: menu-loading 2s cubic-bezier(0.63, 0.84, 0.13, 1.04) 2s forwards;
   }
-  h1 {
+  &__title {
+    position: relative;
     @include margin;
     font-size: 15px;
-    font-weight: lighter
+    font-weight: lighter;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      width: 40px; 
+      height: 5px;
+      background-color: $troisieme-couleur;
+    }
   }
   &__card {
     display: flex;
