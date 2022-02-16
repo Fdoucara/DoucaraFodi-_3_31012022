@@ -71,11 +71,17 @@
     &__container{
       width: 100%;
       padding: 15px;
+      overflow: hidden;
       &__description {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        p:first-child {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
       }
     }
     &__icon {

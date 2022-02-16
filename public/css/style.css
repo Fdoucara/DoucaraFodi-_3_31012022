@@ -60,7 +60,7 @@ p {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 p strong {
   font-size: 13px;
@@ -538,12 +538,18 @@ button:hover {
 .epd__card__container {
   width: 100%;
   padding: 15px;
+  overflow: hidden;
 }
 .epd__card__container__description {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+.epd__card__container__description p:first-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .epd__card__icon {
   margin-right: -90px;
@@ -942,7 +948,7 @@ body {
 }
 .restaurants__card__container__icon:hover > .heart--full {
   opacity: 1;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.6s;
 }
 .restaurants__card__container__icon .heart {
   font-size: 25px;
@@ -969,7 +975,7 @@ body {
 }
 .main__container__header__contain__icon:hover > .heart--full {
   opacity: 1;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.6s;
 }
 .main__container__header__contain__icon .heart {
   font-size: 25px;

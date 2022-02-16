@@ -6,7 +6,7 @@
   }
   &:hover > .heart--full {
     opacity: 1;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.6s;
   }
   .heart {
     font-size: 25px;
@@ -34,7 +34,7 @@
   }
   &:hover > .heart--full {
     opacity: 1;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.6s;
   }
   .heart {
     font-size: 25px;
