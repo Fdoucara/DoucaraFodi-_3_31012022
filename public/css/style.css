@@ -552,6 +552,11 @@ button:hover {
   padding: 15px;
   overflow: hidden;
 }
+.epd__card__container__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .epd__card__container__description {
   width: 100%;
   display: flex;

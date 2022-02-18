@@ -80,10 +80,15 @@
     @include box_shadow(rgb(211, 211, 211));
     overflow-x: hidden;
     cursor: pointer;
-    &__container{
+    &__container {
       width: 100%;
       padding: 15px;
       overflow: hidden;
+      &__title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
       &__description {
         width: 100%;
         display: flex;
